@@ -8,9 +8,9 @@
     <a href="/articles"><button>一覧に戻る</button></a>
 
     <form action="/articles/{{ $article->id }}" method="post">
-    @csrf
-    @method('DELETE')
-    <input type="submit" value="削除する" onclick="if(!confirm('削除しますか?')){return false};">
+        @csrf
+        @method('DELETE')
+        <input type="submit" value="削除する" onclick="if(!confirm('削除しますか?')){return false};">
     </form>
 
 
